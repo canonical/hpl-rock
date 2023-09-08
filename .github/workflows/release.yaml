@@ -20,7 +20,10 @@ on:
       - main
 
 jobs:
-  publish:
+  ci:
+    uses: ./.github/workflows/ci.yaml
+
+  release-to-ghcr:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
