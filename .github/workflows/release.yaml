@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-name: Release HPL ROCK to ghcr
+name: Release to ghcr
 on:
   workflow_call:
   push:
