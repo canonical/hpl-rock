@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-name: HPL ROCK tests
+name: hpl-rock tests
 on:
   workflow_call:
   pull_request:

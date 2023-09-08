@@ -1,24 +1,27 @@
 <div align="center">
 
-# High-Peformance Linpack (HPL) ROCK
+# High-Performance Linpack (HPL) ROCK
 
-An Ubuntu 22.04 LTS-based [ROCK](https://canonical-rockcraft.readthedocs-hosted.com/en/latest/explanation/rocks/#rocks-explanation) 
-image for running HPL, a portable implementation of the High-Performance Linpack 
-Benchmark for Distributed-Memory Computers. HPL is used to benchmark the [Top 500 supercomputers](https://www.top500.org).
+An Ubuntu 22.04 LTS-based OCI image for running HPL, a portable implementation of the High-Performance Linpack Benchmark for Distributed-Memory Computers. HPL is used to 
+benchmark the [Top 500 supercomputers](https://www.top500.org).
 
+
+[![CI](https://github.com/canonical/hpl-rock/actions/workflows/ci.yaml/badge.svg)](https://github.com/canonical/hpl-rock/actions/workflows/ci.yaml/badge.svg)
+[![Release](https://github.com/canonical/hpl-rock/actions/workflows/release.yaml/badge.svg)](https://github.com/canonical/hpl-rock/actions/workflows/release.yaml/badge.svg)
 [![Matrix](https://img.shields.io/matrix/ubuntu-hpc%3Amatrix.org?logo=matrix&label=ubuntu-hpc)](https://matrix.to/#/#ubuntu-hpc:matrix.org)
 
 </div>
 
 ## Features
 
-The High-Performance Linpack (HPL) ROCK provides a containerised `xhpl` binary that can be used to run the Linpack benchmark on your distributed-memory system. OpenBLAS, ATLAS,
+The High-Performance Linpack (HPL) OCI image provides a containerised `xhpl` binary that 
+can be used to run the Linpack benchmark on your distributed-memory system. OpenBLAS, ATLAS,
 mpich, and libfabric are installed inside this image to support the `xhpl` binary.
 
 ## Usage
 
 This short usage how-to section assumes that you have [Sarus](https://sarus.readthedocs.io/en/stable/quickstart/quickstart.html) 
-installed on your distributed-memory system, however, this ROCK should work with any 
+installed on your distributed-memory system, however, this image should work with any 
 OCI-compliant container runtime.
 
 ### With a single node
@@ -138,9 +141,9 @@ mpirun -np 64 sarus run \
 
 ## Project & Community
 
-The HPL ROCK is a project of the [Ubuntu HPC](https://discourse.ubuntu.com/t/high-performance-computing-team/35988) 
+The HPL OCI image is a project of the [Ubuntu HPC](https://discourse.ubuntu.com/t/high-performance-computing-team/35988) 
 community. It is an open source project that is welcome to community involvement, contributions, suggestions, fixes, and 
-constructive feedback. Interested in being involved with the development of the HPL ROCK? Check out these links below:
+constructive feedback. Interested in being involved with the development of hpl-rock? Check out these links below:
 
 * [Join our online chat](https://matrix.to/#/#ubuntu-hpc:matrix.org)
 * [Contributing guidelines](./CONTRIBUTING.md)
@@ -150,4 +153,5 @@ constructive feedback. Interested in being involved with the development of the 
 
 ## License
 
-The HPL ROCK is free software, distributed under the Apache Software License, version 2.0. See the [LICENSE](./LICENSE) file for more information.
+This HPL OCI image is free software, distributed under the Apache Software License, 
+version 2.0. See the [LICENSE](./LICENSE) file for more information.
